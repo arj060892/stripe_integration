@@ -1,0 +1,26 @@
+<div>
+  <div>Product Name :</div>
+  <div>&nbsp;&nbsp;ABC</div>
+</div>
+
+<div>
+  <div>Product Image :</div>
+  <div>&nbsp;<img src="https://threedaypottytraining.net/wp-content/uploads/2019/12/Get-Dyper.png" alt="Product image"></div>
+</div>
+<div>
+  <div>Product Qty :</div>
+  <div>&nbsp;&nbsp;2</div>
+</div>
+
+<div>
+  <div>Product Price :</div>
+  <div>&nbsp;&nbsp;20$</div>
+</div>
+
+<div>
+  <div><button type="button" (click)="buyProduct()">Buy Product</button></div>
+</div>
+
+<div *ngIf="showStripeControl">
+  <app-payment-request></app-payment-request>
+</div>
